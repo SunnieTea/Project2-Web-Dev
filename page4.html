@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The First Obstacle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <h1>The First Obstacle</h1>
+        <p>As you venture deeper into the Dark Forest, you encounter a mystical guardian. The guardian blocks your path and poses a riddle:</p>
+        <blockquote>
+            "I speak without a mouth and hear without ears.<br> I have no body, but I come alive with wind.<br> What am I?"
+        </blockquote>
+        <form type="get" action="page5.html">
+            <label for="obstacle1Answer">Your Answer:</label>
+            <input type="text" id="obstacle1Answer" name="obstacle1Answer" placeholder="echo">
+
+            <button type="submit" id="submitButton" style="color: white; background-color: red;">Submit Answer</button>
+        </form>
+    </section>
+    <script>
+        let answerInput = document.getElementById("obstacle1Answer");
+        let submitButton = document.getElementById("submitButton");
+
+        let correctAnswer = "echo";
+
+        function correct(correctAnswer, answerInput){
+            if(answerInput.value.toLowerCase() === correctAnswer){
+                submitButton.style.color = "white";
+                submitButton.style.backgroundColor = "green";
+            }else{
+                submitButton.style.color = "white";
+                submitButton.style.backgroundColor = "red";
+            }
+        }
+
+        answerInput.addEventListener("input", function(){
+            correct(correctAnswer, answerInput);
+        });
+    </script>
+</body>
+</html>
