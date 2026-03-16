@@ -9,5 +9,6 @@ So that you can label them all differently.
 By giving them all the same name attribute.
 <br><br>
 * What could happen if the labels aren't correctly associated with the radio buttons? <br>
-Then clicking on the label won't actually check the radio button. 
-
+Then clicking on the label won't actually check the radio button. <br><br>
+* Why do you think checkboxes were used instead of a dropdown menu for selecting supplies? What advantages or disadvantages does this approach offer? <br>
+Checkboxes were used so that people can select multiple provisons at a time, instead of just one. 
