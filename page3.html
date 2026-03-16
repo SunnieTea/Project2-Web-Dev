@@ -11,7 +11,30 @@
         <h1>Pack Your Bag</h1>
         <p>Select the supplies you wish to take on your quest. Choose wisely, as you can only carry a limited amount.</p>
         <form  id="provisionsForm" type="get" action="page4.html">
-            
+            <fieldset>
+                <legend>Choose Your Provisions:</legend>
+                <input type="checkbox" id="food" name="provisions[]" value="food">
+                <label for="food"><b>Food:</b> Essential for energy.</label><br>
+
+                <input type="checkbox" id="water" name="provisions[]" value="water">
+                <label for="water"><b>Water:</b> Hydration is key!</label><br>
+
+                <input type="checkbox" id="potions" name="provisions[]" value="potions">
+                <label for="potions"><b>Magic Potions:</b> For health and magical energy.</label><br>
+
+                <input type="checkbox" id="maps" name="provisions[]" value="maps">
+                <label for="maps"><b>Maps:</b> Don't get lost in the wilderness!</label><br>
+
+                <input type="checkbox" id="sword" name="provisions[]" value="sword">
+                <label for="sword"><b>Sword:</b> Fend off those pesky foes!</label><br>
+                
+                <p>Think carefully - what do you need on your journey?</p>
+            </fieldset>
+            <fieldset>
+                <legend>Continue with Caution:</legend>
+                <p>Once you have chosen your gear, you may continue. But beware, every choice has consequences!</p>
+                <button type="submit">Continue</button>
+            </fieldset>
         </form>
     </section>
 </body>
