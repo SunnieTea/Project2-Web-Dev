@@ -10,7 +10,7 @@
     <section class="container">
         <h1>The Journey Continues</h1>
         <p>With the guardian's riddle behind you, the path forward splits into three. Each route is known to favor certain traits: strength, wisdom, or stealth. Choose your path wisely, as it will influence the challenges you face ahead.</p>
-        <form method="get" action="page6.html">
+        <form method="get" id="determinedPath">
             <label for="pathChoice">Choose Your Path:</label>
             <select id="pathChoice" name="pathChoice">
                 <option>--Please choose an option--</option>
@@ -18,7 +18,7 @@
                 <option id="wisdom" value="wisdom">The path of wisdom</option>
                 <option id="stealth" value="stealth">The path of stealth</option>
             </select>
-            <button type="submit">Continue on Your Journey</button>
+            <button type="submit" onclick="goToPage()">Continue on Your Journey</button>
         </form>
         <p>Your choice will not only test your abilities but also reveal deeper truths about your character.</p>
     </section>
@@ -40,6 +40,16 @@
         }
 
         choice.addEventListener("change", changeColor);
+
+        let form = document.getElementById("determinedPath");
+        
+        function goToPage(){
+            if(choice.value === "stealth"){
+                form.action = "page5b.html";
+            }else{
+                form.action = "page6.html";
+            }
+        }
     </script>
 </body>
 </html>
