@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conclusion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Your Quest Has Concluded</h1>
+        <h2>For now!</h2>
+        <p>Based on your choices, You have managed to save the kingdom. The kingdom will remember your deeds for generations to come.</p>
+        <p>We hope you enjoyed your adventure. Would you like to provide feedback on your experience?</p>
+
+        <label for="feedback">Your Feedback:</label>
+        <textarea id="feedback" rows="5" cols="40" placeholder="Enter your feedback here..."></textarea>
+        
+        <button type="submit" id="submitButton">Submit Feedback</button><br>
+
+        <button type="button" onclick="location.href='welcome.html'">Play Again</button>
+
+        <p>
+            I am sincerely thankful to Ethan, my boyfriend.
+            Even through all the stress of the semester, he is
+            constantly patiently supporting me in any way he can. 
+            No matter how stressed I am he puts a smile on my face
+            and makes my day brighter. Thank you, I love you.
+        </p>
+
+        <script>
+            let submitButton = document.getElementById("submitButton");
+
+            submitButton.addEventListener('click', function thanks(){
+                alert("Thank you for your feedback!")
+            });
+        </script>
+    </section>
+</body>
+</html>
